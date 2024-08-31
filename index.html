@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+  <link rel="stylesheet" href="styles.css" />
+  <title>ArtsyyCart</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="nav__header">
+        <div class="nav__logo">
+          <a href="#" class="logo">
+            <img src="assets/logo.png" alt="logo" />
+            <span>Artsyycart</span>
+          </a>
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#service">Gallery</a></li>
+        <li><a href="#menu">BIO</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <button class="btn">
+            <span><i class="ri-login-box-line"></i></span>
+          </button>
+        </li>
+      </ul>
+      <div class="nav__btns">
+        <a href="https://www.instagram.com/shubh_2006__">
+          <button class="btn">
+            <span><i class="ri-login-box-line"></i></span>
+            Developer
+          </button>
+        </a>
+      </div>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <div class="section__container header__container" id="home">
+      <div class="header__image">
+        <img src="ART2.jpeg" alt="header" />
+      </div>
+      <div class="header__content">
+        <h1>ARTISTS <span>_____ </span></h1>
+        <p class="section__description">
+          Our job is to fill your world with beautiful art, delivered with passion and creativity.
+        </p>
+        <div class="header__btns">
+          <button class="btn">Get Started</button>
+          <a href="#">
+            <span><i class="ri-play-fill"></i></span>
+            Watch Video
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="section__container service__container" id="service">
+    <hr>
+    <div class="main" id="galleryContainer">
+      <!-- Gallery items will be inserted here by JavaScript -->
+    </div>
+    <div class="clearfix"></div>
+  </section>
+
+  <section class="section__container client__container" id="menu">
+    <div class="BIO__image">
+      <img src="profile.jpeg" alt="client" />
+    </div>
+    <div class="client__content">
+      <p class="section__subheader">ARTIST</p>
+      <h2 class="section__header">SNEHA GAJERA</h2>
+      <p class="section__description">
+        In a world filled with creativity, she stands out as a young artist whose passion for drawing knows no bounds. With each stroke of her pencil, she brings her imagination to life, transforming simple ideas into captivating pieces of art. Whether it's a serene landscape or a vibrant portrait, her work reflects not just her talent, but her deep love for the craft. Eager to share her artistic journey with others, she uses her drawings to connect, inspire, and bring a touch of beauty to the world around her. Now, she's excited to showcase her creations, inviting everyone to explore the stories her art tells.
+      </p>
+      <div class="client__details">
+        <img src="assets/user.jpeg" alt="client" />
+        <div>
+          <h4>Shubh Mehta</h4>
+          <h5>Developer</h5>
+        </div>
+      </div>
+      <div class="client__rating">
+        <span><i class="ri-star-fill"></i></span>
+        <span><i class="ri-star-fill"></i></span>
+        <span><i class="ri-star-fill"></i></span>
+        <span><i class="ri-star-fill"></i></span>
+        <span><i class="ri-star-line"></i></span>
+        <span>4.8</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="download__container" id="contact">
+    <div class="section__container">
+      <div class="download__image">
+        <img src="artist.jpeg" alt="download" />
+      </div>
+      <div class="download__content">
+        <p class="section__subheader">CONTACT US</p>
+        <h2 class="section__header">Reach Out to Sneha Gajera</h2>
+        <p class="section__description">
+          Connect with the artist and explore custom artworks tailored to your vision.
+        </p>
+        <div class="download__btn">
+          <form action="https://formsubmit.co/shubhmehta2006@gmail.com" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Send</button>
+            <input type="hidden" name="__captcha" value="false">
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="section__container footer__container">
+      <div class="footer__col">
+        <div class="footer__logo">
+          <a href="#" class="logo">
+            <img src="assets/logo.png" alt="logo" />
+            <span>Artsyycart</span>
+          </a>
+        </div>
+        <p class="section__description">
+          Explore the world of art with Sneha Gajera, where creativity meets passion.
+        </p>
+        <ul class="footer__socials">
+          <li>
+            <a href="www.instagram.com/artsyycart__"><i class="ri-instagram-fill"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="ri-facebook-fill"></i></a>
+          </li>
+          <li>
+            <a href="https://in.pinterest.com/snehadiaryyy/"><i class="ri-pinterest-fill"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>About</h4>
+        <ul class="footer__links">
+          <li><a href="#MENU">About Us</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Menu</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Company</h4>
+        <ul class="footer__links">
+          <li><a href="#">Why ArtsyyCart?</a></li>
+          <li><a href="https://www.instagram.com/coderking__1">Partner With Us</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="https://www.instagram.com/shubh_2006__?igsh=MWN5Z3NqMnY5cm9seQ==">Devloper </a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Support</h4>
+        <ul class="footer__links">
+          <li><a href="https://www.instagram.com/artsyycart__">Account</a></li>
+          <li><a href="#CONTACT">Support Center</a></li>
+          <li><a href="#CONTACT">Feedback</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="#">Accessibility</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bar">
+      Copyright © 2024 Sneha Gajera. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

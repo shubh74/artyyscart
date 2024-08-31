@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
       { src: 'assets/ART14.jpeg', alt: 'Art 14' },
       { src: 'assets/ART15.jpeg', alt: 'Art 15' },
       { src: 'assets/ART16.jpeg', alt: 'Art 16' },
-      { src: 'assets/ART11.jpeg', alt: 'Art 17' },
+      { src: 'assets/ART17.jpeg', alt: 'Art 17' },
       { src: 'assets/ART18.jpeg', alt: 'Art 18' },
       { src: 'assets/ART19.jpeg', alt: 'Art 19' },
       { src: 'assets/ART20.jpeg', alt: 'Art 20' },

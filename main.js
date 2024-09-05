@@ -3,6 +3,9 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Gallery items array
     const galleryItems = [
+        { src: 'assets/ART38.jpeg', alt: 'Art 1' },
+        { src: 'assets/ART39.jpeg', alt: 'Art 1' },
+        { src: 'assets/ART40.jpeg', alt: 'Art 1' },
       { src: 'assets/ART1.jpeg', alt: 'Art 1' },
       { src: 'assets/ART2.jpeg', alt: 'Art 2' },
       { src: 'assets/ART3.jpeg', alt: 'Art 3' },
@@ -15,8 +18,6 @@ document.addEventListener('DOMContentLoaded', () => {
       { src: 'assets/ART10.jpeg', alt: 'Art 10' },
       { src: 'assets/ART11.jpeg', alt: 'Art 11' },
       { src: 'assets/ART12.jpeg', alt: 'Art 12' },
-      { src: 'assets/ART13.jpeg', alt: 'Art 13' },
-      { src: 'assets/ART14.jpeg', alt: 'Art 14' },
       { src: 'assets/ART15.jpeg', alt: 'Art 15' },
       { src: 'assets/ART16.jpeg', alt: 'Art 16' },
       { src: 'assets/ART17.jpeg', alt: 'Art 17' },

@@ -3,9 +3,9 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Gallery items array
     const galleryItems = [
-        { src: 'assets/ART38.jpeg', alt: 'Art 1' },
-        { src: 'assets/ART39.jpeg', alt: 'Art 1' },
-        { src: 'assets/ART40.jpeg', alt: 'Art 1' },
+      { src: 'assets/ART38.jpeg', alt: 'Art 38'},
+      { src: 'assets/ART39.jpeg', alt: 'Art 39'},
+      { src: 'assets/ART40.jpeg', alt: 'Art 40'},
       { src: 'assets/ART1.jpeg', alt: 'Art 1' },
       { src: 'assets/ART2.jpeg', alt: 'Art 2' },
       { src: 'assets/ART3.jpeg', alt: 'Art 3' },

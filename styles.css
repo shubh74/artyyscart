@@ -8,6 +8,15 @@
   --extra-light: #f3f4f6;
   --white: #ffffff;
   --max-width: 1200px;
+  --border-radius: 10px;
+  --box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 4rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.5rem;
+  --font-size-xl: 3rem;
 }
 
 * {
@@ -757,4 +766,274 @@ button:hover {
   .footer__col:nth-child(1) {
     grid-column: 1/3;
   }
+}
+
+html {
+  scroll-padding-top: 80px; /* Adjust based on nav height */
+}
+
+/* --- UI/UX Upgrades --- */
+
+/* 1. Smoother transitions for interactive elements */
+a, button, .btn, input, textarea, .gallery-item, .service__card, .menu__card {
+  transition: all 0.25s cubic-bezier(.4,0,.2,1);
+}
+
+/* 2. Card hover effect for gallery and service cards */
+.gallery-item,
+.service__card,
+.menu__card {
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  background: #fff;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  position: relative;
+}
+.gallery-item:hover,
+.service__card:hover,
+.menu__card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(245,71,72,0.15), 0 2px 8px rgba(0,0,0,0.08);
+  z-index: 2;
+}
+
+/* 3. Modern button style */
+.btn, button {
+  font-family: inherit;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  border-radius: 2rem;
+  box-shadow: 0 2px 8px rgba(245,71,72,0.08);
+  background: linear-gradient(90deg, var(--primary-color) 60%, #fdc55e 100%);
+  border: none;
+  outline: none;
+  padding: 1rem 2.5rem;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
+}
+.btn:hover, button:hover {
+  background: linear-gradient(90deg, var(--primary-color-dark) 60%, #fdc55e 100%);
+  box-shadow: 0 4px 16px rgba(245,71,72,0.18);
+  transform: translateY(-2px) scale(1.04);
+}
+
+/* 4. Input and textarea improvements */
+input, textarea {
+  border: 1.5px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 1rem;
+  background: #fafbfc;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+input:focus, textarea:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(245,71,72,0.08);
+}
+
+/* 5. Section container with subtle shadow and rounded corners */
+.section__container {
+  background: #fff;
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 16px rgba(0,0,0,0.04);
+  padding: 3rem 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+/* 6. Headings with accent underline */
+.section__header {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+.section__header::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary-color), #fdc55e);
+  border-radius: 2px;
+  margin-top: 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* 7. Subtle background for body */
+body {
+  background: linear-gradient(135deg, #f3f4f6 0%, #fff 100%);
+  min-height: 100vh;
+}
+
+/* 8. Navbar improvements */
+nav {
+  background: rgba(255,255,255,0.95);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+  border-bottom: 1.5px solid #f3f4f6;
+  backdrop-filter: blur(6px);
+}
+.nav__links a {
+  padding: 0.5rem 1.2rem;
+  border-radius: 1.5rem;
+  font-size: 1.05rem;
+}
+.nav__links a:hover, .nav__links a:focus {
+  background: #fdc55e22;
+  color: var(--primary-color-dark);
+}
+
+/* 9. Footer improvements */
+.footer__container {
+  background: #fff;
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+  box-shadow: 0 -2px 16px rgba(0,0,0,0.04);
+  padding-top: 2rem;
+}
+.footer__bar {
+  background: #f3f4f6;
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
+  color: #888;
+  font-size: 0.95rem;
+  padding: 1rem 0;
+}
+
+/* 10. Responsive improvements */
+@media (max-width: 768px) {
+  .section__container {
+    padding: 1.5rem 0.5rem;
+  }
+  .section__header {
+    font-size: 2rem;
+  }
+  .btn, button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+  }
+}
+
+/* 11. Focus-visible for accessibility */
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+/* 12. Gallery grid improvements */
+#galleryContainer, .main {
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: stretch;
+}
+
+/* 13. Add a subtle hover effect to images */
+img, .gallery-item img, .service__card img {
+  transition: filter 0.2s, transform 0.2s;
+}
+img:hover, .gallery-item img:hover, .service__card img:hover {
+  filter: brightness(0.97) saturate(1.1);
+  transform: scale(1.03);
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+}
+.gallery-item .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  color: #fff;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.2s;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 1rem;
+}
+.gallery-item:hover .overlay {
+  opacity: 1;
+}
+
+/* Responsive Flexbox Gallery */
+#galleryContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.gallery-item {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+  overflow: hidden;
+  margin: 0;
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s, box-shadow 0.2s;
+  position: relative;
+}
+
+.gallery-item img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  border-radius: 16px 16px 0 0;
+  transition: transform 0.2s;
+}
+
+.gallery-item:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(245,71,72,0.15), 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.gallery-item h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #222;
+  margin: 1rem 1rem 0.5rem 1rem;
+}
+
+.gallery-item p {
+  font-size: 0.97rem;
+  color: #555;
+  margin: 0 1rem 1rem 1rem;
+  flex: 1;
+}
+
+/* Overlay for lightbox or zoom icon (optional) */
+.gallery-item .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  color: #fff;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.2s;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 1rem;
+  cursor: pointer;
+}
+.gallery-item:hover .overlay {
+  opacity: 1;
+}
+
+/* Responsive tweaks */
+@media (max-width: 1200px) {
+  .gallery-item { width: 220px; }
+}
+@media (max-width: 900px) {
+  .gallery-item { width: 45vw; max-width: 320px; }
+}
+@media (max-width: 600px) {
+  #galleryContainer { gap: 1rem; }
+  .gallery-item { width: 95vw; max-width: 99vw; }
 }

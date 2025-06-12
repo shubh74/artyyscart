@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     suggestion.innerHTML = `
       <p style="margin-bottom: 10px;">Follow us on Instagram for more updates!</p>
-      <a href="https://instagram.com/artyyscraft__" target="_blank" style="color: blue; font-weight: bold;">Follow Now</a>
+      <a href="https://www.instagram.com/artsyycart__/" target="_blank" style="color: blue; font-weight: bold;">Follow Now</a>
       <span style="display:block; cursor:pointer; margin-top:10px; font-size: 12px; color:red;" onclick="this.parentElement.remove()">Dismiss</span>
     `;
     document.body.appendChild(suggestion);

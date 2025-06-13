@@ -74,6 +74,8 @@
     <section class="section__container service__container" id="service">
       <hr>
       <div class="main" id="galleryContainer">
+        <div id="filterButtons" class="filter-buttons"></div>
+
         <!-- Gallery items will be inserted here by JavaScript -->
       </div>
       <div class="clearfix"></div>
@@ -217,6 +219,35 @@
       function closeLightbox() {
         document.getElementById('lightboxModal').style.display = 'none';
       }
+
+
+      function renderFilters() {
+  const filterButtonsContainer = document.getElementById("filterButtons");
+  if (!filterButtonsContainer) return;
+
+  // Get unique categories
+  const categories = ["All", ...new Set(artworks.map(art => art.category))];
+
+  // Render buttons
+  filterButtonsContainer.innerHTML = categories.map(category => `
+    <button class="filter-btn" data-category="${category}">${category}</button>
+  `).join("");
+
+  // Add click listeners
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const selected = btn.getAttribute('data-category');
+      if (selected === "All") {
+        filteredArtworks = [...artworks];
+      } else {
+        filteredArtworks = artworks.filter(art => art.category === selected);
+      }
+      renderGallery();
+    });
+  });
+}
+
+      
     </script>
 
   </body>

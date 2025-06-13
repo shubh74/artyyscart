@@ -3,21 +3,25 @@
     "title": "Sunset Beauty",
     "image": "images/ART1.jpeg",
     "description": "A calm sunset view."
+    "category": "OIL PASTEL"
   },
   {
     "title": "Dream Forest",
     "image": "images/ART2.jpeg",
     "description": "Mystical forest in purple hues."
+    "category": "OIL PASTEL"
   },
   {
     "title": "Cosmic Vision",
     "image": "images/ART3.jpeg",
     "description": "Space meets surreal art."
+    "category": "PHONE CASE"
   },
   {
     "title": "Ocean Depths",
     "image": "images/ART4.jpeg",
     "description": "Underwater world in vibrant colors."
+    "category": "OIL PASTEL"
   },
   {
     "title": "Urban Jungle",

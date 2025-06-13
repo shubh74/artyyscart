@@ -1037,3 +1037,24 @@ img:hover, .gallery-item img:hover, .service__card img:hover {
   #galleryContainer { gap: 1rem; }
   .gallery-item { width: 95vw; max-width: 99vw; }
 }
+
+.filter-buttons {
+  text-align: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  background-color: #333;
+  color: white;
+  border: none;
+  margin: 5px;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.filter-btn:hover {
+  background-color: #555;
+}
